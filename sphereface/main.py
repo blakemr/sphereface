@@ -49,3 +49,13 @@ def great_circle_length(p1: Tuple, p2: Tuple) -> float:
     r2 = 2 * EARTH_RADIUS_METERS
 
     return h * r2
+
+# Planned:
+# terminal coordinates
+# projection point
+# line of sight
+# Vertical angle
+# bearing-angles
+# point-along-line
+# surface centroid
+# point-circle around target
