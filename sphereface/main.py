@@ -22,6 +22,24 @@ def dms2dd(d: float, m: float, s: float, sign: bool) -> float:
     return (dd + dm + ds) * dh
 
 
+# def dd2cart(p: Tuple[float, float]) -> Tuple[float, float, float]:
+#     ''' Convert decimal degrees to cartesian coordinates
+
+#     args:
+#         p (tuple): lat/long coordinate pair
+    
+#     return:
+#         Tuple representing the x, y, z coordinates
+#     '''
+#     lat, lon = p
+
+#     x = sin(lat) * cos(lon)
+#     y = sin(lat) * sin(lon)
+#     z = cos(lat)
+
+#     return x, y, z
+
+
 def great_circle_length(
     p1: Tuple[float, float],
     p2: Tuple[float, float]
@@ -52,6 +70,11 @@ def great_circle_length(
     r2 = 2 * EARTH_RADIUS_METERS
 
     return h * r2
+
+# TODO: Put together a function to work in rotations.  
+# Things get much easier. Pretty sure I'm missing something obvious.
+
+# def slerp(p1: float, p2: float, t: float) -> Tuple[float, float]
 
 # Planned:
 # terminal coordinates
