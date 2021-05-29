@@ -22,7 +22,10 @@ def dms2dd(d: float, m: float, s: float, sign: bool) -> float:
     return (dd + dm + ds) * dh
 
 
-def great_circle_length(p1: Tuple, p2: Tuple) -> float:
+def great_circle_length(
+    p1: Tuple[float, float],
+    p2: Tuple[float, float]
+) -> float:
     ''' Returns the shortest distance between two points on a sphere
 
     args:
